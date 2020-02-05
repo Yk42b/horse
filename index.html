@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>копролатиночка.net</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="alertify/lib/alertify.min.js"></script>
+	<link rel="stylesheet" href="alertify/themes/alertify.core.css" />
+	<link rel="stylesheet" href="alertify/themes/alertify.default.css" />
+	<link href="images/horse.png" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+	<script type="text/javascript">
+		$(document).ready(function (e) {
+			$('body').on('mousemove', function (e) {
+				var x = parseInt(($(this).width() - e.clientX)),
+					y = parseInt(($(this).height() - e.clientY));
+				$('.moveable').css({'left': x, 'top': y});
+			});
+			$('.moveable').on('click', function(){
+				alertify.log ('<img src="images/no.png"/><b>НЕ ТВОЕ ДЕЛО!</b>', "error");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<div id="horse">
+			<h1>Кiнь, что ти делаеш в космосе? Ты же не можеш там дышать!</h1>
+		</div>
+	</div>
+	<img src="images/horse2.png" class="moveable"/>
+</body>
+</html> 

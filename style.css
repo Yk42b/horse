@@ -1,0 +1,55 @@
+body {
+	background-color: #FFFFFF;
+	color: #FFFFFF;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 1.43;
+	background-image: url('images/kosmos.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+}
+
+#horse { 
+	margin: 30px auto;
+	padding: 0px;
+	width: 1200px;
+	height: 100px;
+}
+
+h1 { 
+	background: -moz-linear-gradient(left, rgba(138,0,129,0.5) 0%, rgba(255,44,70,0.4) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(138,0,129,0.5)), color-stop(100%,rgba(255,44,70,0.4)));
+	background: -webkit-linear-gradient(left, rgba(138,0,129,0.5) 0%,rgba(255,44,70,0.4) 100%);
+	background: -o-linear-gradient(left, rgba(138,0,129,0.5) 0%,rgba(255,44,70,0.4) 100%);
+	background: -ms-linear-gradient(left, rgba(138,0,129,0.5) 0%,rgba(255,44,70,0.4) 100%);
+	background: linear-gradient(to right, rgba(138,0,129,0.5) 0%,rgba(255,44,70,0.4) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808a0081', endColorstr='#66ff2c46',GradientType=1 );
+
+	border: 1px solid #663366;
+	color: #FFFFFF;
+	font-family: "PF";
+	font-size: 35px;
+	padding: 20px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.moveable {
+	position: absolute;
+	cursor: pointer;
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	height: 100%;
+}
+
